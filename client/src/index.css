@@ -2,3 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Navbar styles  */
+.category-label{
+  @apply text-sm hover:cursor-pointer hover:underline underline-offset-2 decoration-1 leading-6 text-gray-900 peer-hover:underline
+}
+
+.collections-label{
+  @apply text-gray-800 text-sm mx-auto my-2 font-semibold relative
+}
+
+.categories-box{
+  @apply w-40 bg-white border-[0.2px] border-gray-100 py-1 pl-4 absolute
+}
