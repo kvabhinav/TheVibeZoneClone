@@ -19,11 +19,11 @@ export default function Navbar() {
     })
 
     return (
-        <div className="w-screen h-[20vh]">
-            <div className="w-screen h-[5vh] bg-black flex justify-center items-center">
+        <div className="w-full h-[20vh] fixed top-0 z-50">
+            <div className="w-full h-[5vh] bg-black flex justify-center items-center">
                 <h1 className="text-white">BUY 2 HOODIES AND GET THIRD ONE 50% OFF.</h1>
             </div>
-            <div className="w-screen h-[15vh] bg-gray-100 flex justify-around items-center">
+            <div className="w-full h-[15vh] bg-gray-100 flex justify-around items-center">
                 <div className='flex'>
 
 

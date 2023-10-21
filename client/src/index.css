@@ -14,3 +14,15 @@
 .categories-box{
   @apply w-40 bg-white border-[0.2px] border-gray-100 py-1 pl-4 absolute
 }
+
+
+/* Footer styles  */ 
+.social-media-icons{
+  @apply w-5 h-5 mx-[2px] hover:mx-0 hover:cursor-pointer hover:w-6 hover:h-6
+}
+
+
+/* Home Page styles  */
+.collection-images{
+  @apply w-[362px] 
+}
