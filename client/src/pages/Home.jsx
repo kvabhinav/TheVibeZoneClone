@@ -4,6 +4,13 @@ import menModel from '../assets/images/menModel.png'
 import womenModel from '../assets/images/womenModel.png'
 import minimalism from '../assets/images/minimalism.png'
 
+
+import { BsArrowRight, BsArrowRightShort } from 'react-icons/bs'
+import { FaArrowRightLong } from 'react-icons/fa6'
+import { GoArrowRight } from 'react-icons/go'
+
+import { HiOutlineArrowRight, HiOutlineArrowNarrowRight, HiArrowRight } from 'react-icons/hi'
+
 export default function Home() {
     return (
         <div className='w-full z-0 mt-[20vh]'>
@@ -23,22 +30,44 @@ export default function Home() {
 
 
             {/* collections sections  */}
-            <div className="max-w-6xl mx-auto">
-                <h1 className='text-[42px] mr-auto ml-6'>Collections</h1>
+            <div className="max-w-6xl mx-auto mb-16">
+                <h1 className='text-[42px] mr-auto ml-6 mb-8'>Collections</h1>
                 <div className='flex gap-x-2 justify-center items-center'>
-                    <div>
-                      <img src={menModel} alt="menModel collections" className='collection-images' />  
-                      <h2>Men</h2>
+                    <div className='group'>
+                        <div className='w-[362px] box-border overflow-hidden'>
+                            <img src={menModel} alt="menModel collections" className='collection-images' />
+                        </div>
+
+                        <div className='flex justify-start items-center gap-x-2  mt-2'>
+                            <h2 className='text-lg'>Men</h2>
+                            <BsArrowRight className='w-6 h-6 ml-[0.5px]  hidden group-hover:block' />
+                            <GoArrowRight className='w-6 h-6  group-hover:hidden' />
+                        </div>
+
                     </div>
-                    <div>
-                        <img src={womenModel} alt="womenModel collections" className='collection-images'  />
-                        <h2>Women</h2>
+                    <div className='group'>
+                        <div className='w-[362px] box-border overflow-hidden'>
+                            <img src={womenModel} alt="womenModel collections" className='collection-images' />
+                        </div>
+
+                        <div className='flex justify-start items-center gap-x-2  mt-2'>
+                            <h2 className='text-lg'>Women</h2>
+                            <BsArrowRight className='w-6 h-6 ml-[0.5px]  hidden group-hover:block' />
+                            <GoArrowRight className='w-6 h-6  group-hover:hidden' />
+                        </div>
                     </div>
-                    <div>
-                     <img src={kidsModel} alt="kidModel collections" className='collection-images' />   
-                     <h3 className='collection-label'>Kids</h3>
+                    <div className='group'>
+                        <div className='w-[362px] box-border overflow-hidden'>
+                            <img src={kidsModel} alt="kidModel collections" className='collection-images' />
+                        </div>
+
+                        <div className='flex justify-start items-center gap-x-2  mt-2'>
+                            <h2 className='text-lg'>Kids</h2>
+                            <BsArrowRight className='w-6 h-6 ml-[0.5px]  hidden group-hover:block' />
+                            <GoArrowRight className='w-6 h-6  group-hover:hidden' />
+                        </div>
                     </div>
-                    
+
                 </div>
             </div>
 
