@@ -28,7 +28,8 @@ export default function Navbar() {
 
 
                     <div>
-                        <img src={Logo} alt="logo" width={100} height={100} />
+                        <Link to='/'><img src={Logo} alt="logo" width={100} height={100} className='cursor-pointer' /></Link>
+
                     </div>
                     <div className='flex justify-center items-center gap-x-4' >
 
@@ -92,7 +93,7 @@ export default function Navbar() {
                         <RiArrowDropDownLine size={24} className='mt-[0.5px] hover:cursor-pointer' />
                     </div>
                     <IoIosSearch size={24} className='hover:cursor-pointer' />
-                    <GoPerson size={22} className='hover:cursor-pointer' />
+                    <Link to='/account/login'><GoPerson size={22} className='hover:cursor-pointer' /></Link>
                     <BsBag size={20} className='hover:cursor-pointer' />
                 </div>
             </div>

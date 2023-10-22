@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* common styles  */
+.black-button{
+  @apply w-28 h-11 text-white bg-black my-8
+}
 /* Navbar styles  */
 .category-label{
   @apply text-sm hover:cursor-pointer hover:underline underline-offset-2 decoration-1 leading-6 text-gray-900 peer-hover:underline
@@ -25,4 +30,9 @@
 /* Home Page styles  */
 .collection-images{
   @apply w-[362px] transition-transform ease-out duration-500 group-hover:scale-[1.03] group-hover:cursor-pointer
+}
+
+/* Login page styles  */
+.login-input{
+  @apply border-2 border-gray-400 bg-white w-[450px] h-12 px-4 my-3 text-base text-black
 }
