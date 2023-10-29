@@ -8,7 +8,7 @@ export default function Register() {
     const [password, setPassword] = useState('')
 
     return (
-        <div className="w-full h-fit mt-40 ">
+        <div className="w-full h-[450px] mt-40 ">
             <div className="max-w-lg mx-auto flex flex-col justify-center items-center px-[31px]">
                 <h1 className="text-[40px] font-semibold my-4">Create account</h1>
                 <input type="text" className="login-input" name="firstName" placeholder="First name" value={firstName} onChange={(e) => setFirstName(e.target.value)} />

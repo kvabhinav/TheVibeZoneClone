@@ -16,7 +16,7 @@ export default function Home() {
         <div className='w-full z-0 mt-[20vh]'>
             <div className='relative'>
                 <img src={homeWallpaper} alt="wallpaper" className='w-full h-full brightness-50' />
-                <div className='absolute left-[47%] bottom-4 text-center'>
+                <div className='absolute left-[44%] bottom-20 text-center'>
                     <h1 className='text-white text-2xl font-bold'>Own Your Style!</h1>
                     <button className='w-28 h-11 bg-white text-sm mt-4 '>shop</button>
                 </div>
