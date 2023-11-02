@@ -13,11 +13,19 @@ const userSchema = new Schema({
     password: {
         type: String,
         required: true
+    },
+    firstName: {
+        type: String,
+        required: false
+    },
+    lastName: {
+        type: String,
+        required: false
     }
 })
 
 //signup static function
-userSchema.statics.signup = async function (email, password) {
+userSchema.statics.signup = async function (email, password, firstName, lastName) {
 
     //validation
     if (!email || !password) {
@@ -40,12 +48,11 @@ userSchema.statics.signup = async function (email, password) {
     const salt = await bcrypt.genSalt(10)
     const hash = await bcrypt.hash(password, salt)
 
-    const user = await this.create({ email: email, password: hash })
+    const user = await this.create({ email: email, password: hash, firstName: firstName, lastName: lastName })
     return user
 }
 
 //signin statics function
-
 userSchema.statics.login = async function (email, password) {
 
     if (!email || !password) {
@@ -54,12 +61,12 @@ userSchema.statics.login = async function (email, password) {
 
     const user = await this.findOne({ email })
 
-    if(!user){
+    if (!user) {
         throw Error("Invalid Email")
     }
 
-    const match = bcrypt.compare(password,user.password)
-    if(!match){
+    const match = await bcrypt.compare(password, user.password)
+    if (!match) {
         throw Error("Incorrect Password")
     }
 

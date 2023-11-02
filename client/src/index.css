@@ -36,3 +36,11 @@
 .login-input{
   @apply border-2 border-gray-400 bg-white w-[450px] h-12 px-4 my-3 text-base text-black
 }
+
+.error-box{
+  @apply border-black border-2 text-center bg-red-200 rounded-md w-fit h-fit px-2 py-1
+}
+
+.error{
+  @apply text-red-800
+}
