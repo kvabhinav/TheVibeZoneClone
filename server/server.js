@@ -4,7 +4,7 @@ const dotenv = require('dotenv').config()
 const mongoose = require('mongoose')
 
 const homeRoute = require('./routes/homeRoute')
-// const adminRoute = require('./routes/adminRoute')
+const adminRoute =require('./routes/adminRoute')
 
 
 const app = express()
@@ -16,7 +16,7 @@ app.use(express.json())
 
 //routes
 app.use('/', homeRoute)
-// app.use("/admin",adminRoute)
+app.use("/admin",adminRoute)
 
 
 mongoose.connect(process.env.MONGODB_URI).then(() => {
